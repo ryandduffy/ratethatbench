@@ -1,0 +1,33 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1,
+        "name": "The Quiet Contemplation",
+        "comfort": 6.8,
+        "availability": 9.1,
+        "scenery": 8.6,
+        "solitude": 6.4,
+        "crow_density": 6.4,
+        "notes": "Beautiful view of POFA (Palace of Fine Arts)."
+      },
+      "geometry": { "type": "Point", "coordinates": [-122.44888, 37.79883] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2,
+        "name": "The Sitting Duck",
+        "comfort": 6.8,
+        "availability": 8.6,
+        "scenery": 8.8,
+        "solitude": 4.3,
+        "crow_density": 4.2,
+        "notes": "Pond side oasis with heavy flora and even some fauna of the duck variety."
+      },
+      "geometry": { "type": "Point", "coordinates": [-122.44849, 37.80055] }
+    }
+  ]
+}

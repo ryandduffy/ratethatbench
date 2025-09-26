@@ -1,0 +1,69 @@
+/* styles.css — upgraded UI (deduped) */
+:root{
+  --bg:#f6f8fb; --card:#ffffff; --muted:#6b7280; --accent:#3b82f6;
+  --success:#10b981; --warning:#f59e0b; --danger:#ef4444;
+  --glass:rgba(255,255,255,0.6); --shadow:0 6px 18px rgba(20,24,40,0.08);
+  --radius:10px;
+}
+
+html, body {
+  height:100%; margin:0;
+  font-family:'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background:var(--bg); color:#0f172a;
+}
+
+/* Layout */
+#app { display:flex; height:100vh; }
+#sidebar {
+  width:360px; min-width:280px; max-width:460px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(250,250,252,0.85));
+  border-right:1px solid rgba(15,23,42,0.06);
+  padding:18px; box-sizing:border-box; overflow:auto; backdrop-filter:blur(6px);
+}
+#map { flex:1; }
+
+/* Header */
+.sidebar-header { display:flex; align-items:center; gap:12px; margin-bottom:12px; }
+.logo { --logo-size:88px; width:72px; height:72px; border-radius:12px; box-shadow:var(--shadow); display:flex; align-items:center; justify-content:center; overflow:hidden; flex:0 0 72px; }
+.logo img { display:block; width:88px; height:88px; object-fit:cover; border-radius:12px; }
+.sidebar-header.big { gap:18px; align-items:flex-start; }
+.sidebar-header.big .logo { width:88px; height:88px; flex:0 0 88px; }
+
+.header-pair { display:flex; align-items:center; justify-content:center; gap:16px; padding:8px 12px; }
+.headline-wrap { display:flex; flex-direction:column; align-items:flex-start; }
+.headline-quote { margin:0; font-style:italic; font-weight:200; font-size:0.98rem; line-height:1.12; color:#081024; max-height:calc(var(--logo-size, 88px) * 0.95); display:flex; align-items:center; letter-spacing:-0.01em; -webkit-font-smoothing:antialiased; }
+
+/* Bench list */
+.bench-item { padding:12px; border-radius:12px; margin-bottom:12px; cursor:pointer; background:var(--card); border:1px solid rgba(15,23,42,0.04); box-shadow:var(--shadow); transition:transform .12s ease, box-shadow .12s ease; }
+.bench-item:hover { transform:translateY(-4px); box-shadow:0 14px 30px rgba(15,23,42,0.08); }
+.bench-item.active { outline:3px solid rgba(59,130,246,0.12); border-color:rgba(59,130,246,0.3); box-shadow:0 18px 40px rgba(14,39,80,0.12); transform:translateY(-6px); }
+.bench-title { font-weight:600; font-size:1rem; color:#0b1220; }
+.bench-meta { color:var(--muted); font-size:0.92rem; margin-top:6px; }
+.bench-meta--spaced { margin-bottom:6px; }
+.bench-scores-compact { font-size:0.85rem; color:#556; margin-top:6px; }
+
+/* Score lines */
+.score-list { margin-top:6px; display:flex; flex-direction:column; gap:6px; }
+.score-line { display:flex; align-items:center; gap:10px; font-size:0.9rem; color:#334155; }
+.score-label { flex:1; color:var(--muted); }
+.score-value { width:36px; text-align:right; font-variant-numeric:tabular-nums; color:#0b1220; font-weight:600; }
+.score-bar { height:6px; flex:2; background:rgba(15,23,42,0.06); border-radius:6px; overflow:hidden; }
+.score-bar > i { display:block; height:100%; background:linear-gradient(90deg, #10b981, #3b82f6); width:0%; }
+
+/* Popup content */
+.bench-popup { min-width:240px; font-family:inherit; color:#081024; }
+.bench-popup .bench-title { font-weight:700; margin-bottom:6px; }
+.bench-popup-overall { margin-bottom:8px; font-weight:600; color:#0b1220; }
+.bench-popup-notes { margin-top:8px; color:#333; }
+.bench-popup-coords { margin-top:8px; font-size:0.85em; color:#666; }
+
+/* Marker score-in-dot styles */
+.bench-dot-wrapper { pointer-events:auto; background:transparent; }
+.bench-dot-icon { display:flex; align-items:center; justify-content:center; }
+.bench-dot { width:28px; height:28px; border-radius:50%; color:white; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(2,6,23,0.18); border:1px solid rgba(0,0,0,0.12); }
+.bench-dot.small { width:20px; height:20px; font-size:10px; }
+
+/* Responsive */
+@media (max-width:900px){ #sidebar{ display:none !important; } #app{ flex-direction:column; } html, body, #app, #map { height:100vh; margin:0; } #map{ width:100%; height:100vh; flex:1 1 auto; } }
+@media (max-width:700px){ .center-note{ font-size:0.95em; padding:12px; } }
+@media (max-width:520px){ .header-pair{ gap:10px } .logo img{ width:64px; height:64px } .headline-quote{ font-size:1rem } }
