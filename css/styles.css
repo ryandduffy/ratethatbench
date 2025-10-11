@@ -75,8 +75,8 @@ html, body {
   #map{
     order:1;
     width:100%;
-    flex:0 0 65vh;
-    height:65vh;
+    flex:0 0 70vh;
+    height:70vh;
   }
 
   /* Sidebar as bottom panel (less space) */
@@ -86,7 +86,7 @@ html, body {
     width:100%;
     min-width:0;
     max-width:none;
-    height:35vh;
+    height:30vh;
     border-right:none;
     border-top:1px solid rgba(15,23,42,0.06);
     padding-bottom:calc(env(safe-area-inset-bottom, 0px) + 12px);
