@@ -1,4 +1,4 @@
-/* styles.css — upgraded UI (deduped) */
+/* styles.css — upgraded UI (responsive bottom layout w/ padding) */
 :root{
   --bg:#f6f8fb; --card:#ffffff; --muted:#6b7280; --accent:#3b82f6;
   --success:#10b981; --warning:#f59e0b; --danger:#ef4444;
@@ -63,7 +63,46 @@ html, body {
 .bench-dot { width:28px; height:28px; border-radius:50%; color:white; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(2,6,23,0.18); border:1px solid rgba(0,0,0,0.12); }
 .bench-dot.small { width:20px; height:20px; font-size:10px; }
 
-/* Responsive */
-@media (max-width:900px){ #sidebar{ display:none !important; } #app{ flex-direction:column; } html, body, #app, #map { height:100vh; margin:0; } #map{ width:100%; height:100vh; flex:1 1 auto; } }
-@media (max-width:700px){ .center-note{ font-size:0.95em; padding:12px; } }
-@media (max-width:520px){ .header-pair{ gap:10px } .logo img{ width:64px; height:64px } .headline-quote{ font-size:1rem } }
+/* Responsive: stack with bottom panel + padding */
+@media (max-width:900px){
+  #app{
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+  }
+
+  /* Map on top */
+  #map{
+    order:1;
+    width:100%;
+    flex:0 0 55vh;
+    height:55vh;
+  }
+
+  /* Sidebar as bottom panel */
+  #sidebar{
+    order:2;
+    display:block;
+    width:100%;
+    min-width:0;
+    max-width:none;
+    height:45vh;
+    border-right:none;
+    border-top:1px solid rgba(15,23,42,0.06);
+    padding-bottom:calc(env(safe-area-inset-bottom, 0px) + 12px);
+    padding-left:12px;
+    padding-right:12px;
+    overflow:auto;
+    box-sizing:border-box;
+  }
+}
+
+@media (max-width:700px){
+  .center-note{ font-size:0.95em; padding:12px; }
+}
+
+@media (max-width:520px){
+  .header-pair{ gap:10px }
+  .logo img{ width:64px; height:64px }
+  .headline-quote{ font-size:1rem }
+}
