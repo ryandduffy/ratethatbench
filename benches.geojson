@@ -4,6 +4,34 @@
     {
       "type": "Feature",
       "properties": {
+        "id": 4,
+        "name": "The HBK",
+        "comfort": 6.4,
+        "availability": 8.2,
+        "scenery": 8.4,
+        "solitude": 7.3,
+        "crow_density": 8.9,
+        "notes": "Off the beaten path but close enough to people watch the path beaters."
+      },
+      "geometry": { "type": "Point", "coordinates": [-122.46118, 37.7722] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3,
+        "name": "The Panhandler",
+        "comfort": 6.4,
+        "availability": 8.9,
+        "scenery": 7.8,
+        "solitude": 7.7,
+        "crow_density": 7.7,
+        "notes": "Either just entering or just leaving the precious Panhandle."
+      },
+      "geometry": { "type": "Point", "coordinates": [-122.44164, 37.77342] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": 1,
         "name": "The Quiet Contemplation",
         "comfort": 6.8,
