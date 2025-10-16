@@ -4,6 +4,20 @@
     {
       "type": "Feature",
       "properties": {
+        "id": 5,
+        "name": "The DSF",
+        "comfort": 8.2,
+        "availability": 9.1,
+        "scenery": 7.6,
+        "solitude": 6.8,
+        "crow_density": 8.2,
+        "notes": "Settle in and rest your gaze upon the lovely LDAC (Letterman Digital Arts Center)."
+      },
+      "geometry": { "type": "Point", "coordinates": [-122.45041, 37.79799] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": 4,
         "name": "The HBK",
         "comfort": 6.4,
