@@ -11,7 +11,7 @@
         "scenery": 7.6,
         "solitude": 6.8,
         "crow_density": 8.2,
-        "notes": "Settle in and rest your gaze upon the lovely LDAC (Letterman Digital Arts Center)."
+        "notes": "Settle in and rest your gaze upon the lovely Letterman Digital Arts Center."
       },
       "geometry": { "type": "Point", "coordinates": [-122.45041, 37.79799] }
     },
@@ -28,20 +28,6 @@
         "notes": "Off the beaten path but close enough to people watch the path beaters."
       },
       "geometry": { "type": "Point", "coordinates": [-122.46118, 37.7722] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": 6,
-        "name": "The HH",
-        "comfort": 5.3,
-        "availability": 9.9,
-        "scenery": 8.5,
-        "solitude": 5.1,
-        "crow_density": 9.9,
-        "notes": "Glow lights everywhere I look - as I sit here on the bench, I think, I should wear one."
-      },
-      "geometry": { "type": "Point", "coordinates": [-122.40376, 37.79149] }
     },
     {
       "type": "Feature",
@@ -70,6 +56,20 @@
         "notes": "Beautiful view of POFA (Palace of Fine Arts)."
       },
       "geometry": { "type": "Point", "coordinates": [-122.44888, 37.79883] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 6,
+        "name": "The HH",
+        "comfort": 6.8,
+        "availability": 7.1,
+        "scenery": 8.1,
+        "solitude": 4.3,
+        "crow_density": 9.9,
+        "notes": "Glow lights everywhere. As I sit here on this bench, I think: I should wear one."
+      },
+      "geometry": { "type": "Point", "coordinates": [-122.40376, 37.79149] }
     },
     {
       "type": "Feature",
