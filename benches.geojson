@@ -74,6 +74,20 @@
     {
       "type": "Feature",
       "properties": {
+        "id": 7,
+        "name": "The Local",
+        "comfort": 7.1,
+        "availability": 7.3,
+        "scenery": 8.5,
+        "solitude": 5.2,
+        "crow_density": 7.3,
+        "notes": "Lovely sit in the only park Cow Hollow has to offer."
+      },
+      "geometry": { "type": "Point", "coordinates": [-122.42755, 37.79728] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": 2,
         "name": "The Sitting Duck",
         "comfort": 6.8,
@@ -84,6 +98,20 @@
         "notes": "Pond side oasis with heavy flora and even some fauna of the duck variety."
       },
       "geometry": { "type": "Point", "coordinates": [-122.44849, 37.80055] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 8,
+        "name": "The Salary Man",
+        "comfort": 7.0,
+        "availability": 8.1,
+        "scenery": 2.5,
+        "solitude": 1.5,
+        "crow_density": 6.2,
+        "notes": "Perfect spot for a pre-work rest before heading to FiDi"
+      },
+      "geometry": { "type": "Point", "coordinates": [-122.43551, 37.79978] }
     }
   ]
 }
