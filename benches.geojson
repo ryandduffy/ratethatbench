@@ -109,7 +109,7 @@
         "scenery": 2.5,
         "solitude": 1.5,
         "crow_density": 6.2,
-        "notes": "Perfect spot for a pre-work rest before heading to FiDi"
+        "notes": "Perfect spot for a pre-work rest before heading to FiDi."
       },
       "geometry": { "type": "Point", "coordinates": [-122.43551, 37.79978] }
     }
