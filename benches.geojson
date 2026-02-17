@@ -88,6 +88,20 @@
     {
       "type": "Feature",
       "properties": {
+        "id": 11,
+        "name": "The Low Sitter",
+        "comfort": 5.2,
+        "availability": 7.4,
+        "scenery": 8.2,
+        "solitude": 4.4,
+        "crow_density": 10.0,
+        "notes": "Come one come all to enjoy this low crow and low seat sit in BA."
+      },
+      "geometry": { "type": "Point", "coordinates": [-58.39195, -34.58527] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": 2,
         "name": "The Sitting Duck",
         "comfort": 6.8,
@@ -98,6 +112,34 @@
         "notes": "Pond side oasis with heavy flora and even some fauna of the duck variety."
       },
       "geometry": { "type": "Point", "coordinates": [-122.44849, 37.80055] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 9,
+        "name": "The Hillstone",
+        "comfort": 2.1,
+        "availability": 9.9,
+        "scenery": 6.2,
+        "solitude": 4.1,
+        "crow_density": 8.1,
+        "notes": "Only notable attribute is its proximity to Hillstone."
+      },
+      "geometry": { "type": "Point", "coordinates": [-122.40521, 37.8058] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 10,
+        "name": "The Water Meets Land",
+        "comfort": 7.8,
+        "availability": 2.4,
+        "scenery": 9.6,
+        "solitude": 3.0,
+        "crow_density": 7.1,
+        "notes": "Sittin' on the bench by the bay. Channel your inner Otis while admiring the GGB."
+      },
+      "geometry": { "type": "Point", "coordinates": [-122.44851, 37.80668] }
     },
     {
       "type": "Feature",
